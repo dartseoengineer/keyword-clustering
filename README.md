@@ -29,7 +29,7 @@ pip install pandas tqdm
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/keyword-clustering.git
+git clone https://github.com/dartseoengineer/keyword-clustering.git
 cd keyword-clustering
 ```
 
@@ -44,7 +44,7 @@ pip install pandas tqdm
 The script can be run from the command line with the following parameters:
 
 ```bash
-python cluster_keywords.py input_file output_file [-s SEPARATOR] [-k KEYWORD_COL] [-u URL_COL] [-t SIMILARITY_THRESHOLD]
+python jaccard-score-cli.py input_file output_file [-s SEPARATOR] [-k KEYWORD_COL] [-u URL_COL] [-t SIMILARITY_THRESHOLD]
 ```
 
 ### Required Arguments
@@ -60,7 +60,7 @@ python cluster_keywords.py input_file output_file [-s SEPARATOR] [-k KEYWORD_COL
 ### Example
 
 ```bash
-python cluster_keywords.py for-clustering.csv clustered_keywords.csv -s ';' -k 'keyword' -u 'url' -t 0.6
+python jaccard-score-cli.py for-clustering.csv clustered_keywords.csv -s ';' -k 'keyword' -u 'url' -t 0.6
 ```
 
 This will cluster the keywords in the `for-clustering.csv` file and save the output to `clustered_keywords.csv` using a semicolon (`;`) as the separator with a similarity threshold of 0.6.
