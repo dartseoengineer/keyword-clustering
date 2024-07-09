@@ -15,7 +15,6 @@ The Jaccard similarity coefficient measures similarity between sample sets and i
 ### Prerequisites
 
 You need the following Python packages:
-- `argparse`
 - `pandas`
 - `tqdm`
 
